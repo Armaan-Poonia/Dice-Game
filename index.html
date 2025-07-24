@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Dice Game - COMP2132</h1>
+        <h2>Author: Armaan Poonia</h2>
+    </header>
+
+    <main>
+        <section id="game">
+            <div class="player-area">
+                <h3>You</h3>
+                <div class="dice" id="player-dice">
+                    <img id="player-die1" src="./images/image1.png" alt="Player Die 1"/>
+                    <img id="player-die2" src="./images/image1.png" alt="Player Die 2"/>
+                </div>
+                <p>Round Score: <span id="player-round-score">0</span></p>
+                <p>Total Score: <span id="player-total-score">0</span></p>
+            </div>
+
+            <div class="computer-area">
+                <h3>Computer</h3>
+                <div class="dice" id="computer-dice"> 
+                    <img id="computer-die1" src="./images/image1.png" alt="Computer Die 1"/>
+                    <img id="computer-die2" src="./images/image1.png" alt="Computer Die 2"/>
+                </div>
+                <p>Round Score: <span id="computer-round-score">0</span></p>
+                <p>Total Score: <span id="computer-total-score">0</span></p>
+            </div>
+        </section>
+
+        <div class="controls">
+            <button id="roll-btn">Roll Dice</button>
+            <button id="reset-btn">Reset Game</button>
+        </div>
+
+        <div class="result">
+            <p id="result"></p>
+        </div>
+    </main>
+
+</body>
+</html>
